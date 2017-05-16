@@ -7,4 +7,7 @@
 /.idea
 /src/main/resources/rebel.xml
 /TODO
-
+/*.iml
+/*.ipr
+/*.iws
+/out/
