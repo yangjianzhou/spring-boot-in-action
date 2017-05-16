@@ -1,7 +1,10 @@
-.gradle/*
-.idea/*
-*.iml
-*.ipr
-build/*
-out/×
+/build/
+/bin/
+/.classpath
+/.settings
+/.gradle
+/.project
+/.idea
+/src/main/resources/rebel.xml
+/TODO
 
