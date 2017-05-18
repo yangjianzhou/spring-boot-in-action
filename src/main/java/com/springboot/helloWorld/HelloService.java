@@ -1,4 +1,4 @@
-package com.springboot;
+package com.springboot.helloWorld;
 
 /**
  * Created by yangjianzhou on 17-5-15.

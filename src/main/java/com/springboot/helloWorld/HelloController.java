@@ -1,8 +1,6 @@
-package com.springboot;
+package com.springboot.helloWorld;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,8 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@SpringBootApplication
-public class TestApplication {
+public class HelloController {
 
     @Autowired
     private HelloService helloService ;
@@ -22,7 +19,4 @@ public class TestApplication {
         return helloService.sayHello();
     }
 
-    public static void main(String[] args) {
-        SpringApplication.run(TestApplication.class ,args);
-    }
 }

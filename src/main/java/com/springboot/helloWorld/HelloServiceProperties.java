@@ -1,4 +1,4 @@
-package com.springboot;
+package com.springboot.helloWorld;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
