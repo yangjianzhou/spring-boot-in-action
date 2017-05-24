@@ -17,7 +17,7 @@ import org.thymeleaf.templateresolver.TemplateResolver;
 public class ThymeleafConfiguration {
 
     @Bean
-    public TemplateResolver templateResolver(){
+    public TemplateResolver templateResolver() {
         TemplateResolver templateResolver = new ServletContextTemplateResolver();
         templateResolver.setPrefix("/WEB-INF/templates");
         templateResolver.setSuffix(".html");
@@ -26,14 +26,14 @@ public class ThymeleafConfiguration {
     }
 
     @Bean
-    public SpringTemplateEngine templateEngine(){
+    public SpringTemplateEngine templateEngine() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
         return templateEngine;
     }
 
     @Bean
-    public ThymeleafViewResolver thymeleafViewResolver(){
+    public ThymeleafViewResolver thymeleafViewResolver() {
         ThymeleafViewResolver thymeleafViewResolver = new ThymeleafViewResolver();
         thymeleafViewResolver.setTemplateEngine(templateEngine());
         return thymeleafViewResolver;

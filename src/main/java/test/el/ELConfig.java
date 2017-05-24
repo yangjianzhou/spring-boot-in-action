@@ -15,13 +15,13 @@ import org.springframework.context.annotation.PropertySource;
 public class ELConfig {
 
     @Value("zhangSan")
-    private String name ;
+    private String name;
 
     @Value("#{systemProperties['os.name']}")
-    private String osName ;
+    private String osName;
 
     @Value("${book.name}")
-    private String bookName ;
+    private String bookName;
 
     public String getName() {
         return name;

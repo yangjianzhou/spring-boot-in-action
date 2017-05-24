@@ -16,7 +16,7 @@ import org.springframework.context.annotation.ImportResource;
 @Configuration
 @EnableConfigurationProperties(HelloServiceProperties.class)
 @ConditionalOnClass(HelloService.class)
-@ConditionalOnProperty(prefix = "hello", value = "enabled" ,matchIfMissing = true)
+@ConditionalOnProperty(prefix = "hello", value = "enabled", matchIfMissing = true)
 public class HelloServiceAutoConfiguration {
 
     @Autowired

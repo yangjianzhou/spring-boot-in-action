@@ -5,7 +5,7 @@ package test.webSocket;
  */
 public class Message {
 
-    private String name ;
+    private String name;
 
     public String getName() {
         return name;

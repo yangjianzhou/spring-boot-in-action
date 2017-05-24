@@ -5,7 +5,7 @@ package test.webSocket;
  */
 public class Response {
 
-    private String message ;
+    private String message;
 
     public Response(String message) {
         this.message = message;

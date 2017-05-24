@@ -9,7 +9,7 @@ public class TestEvent {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(EventConfig.class);
-        DemoPublisher publisher = (DemoPublisher)context.getBean("demoPublisher");
+        DemoPublisher publisher = (DemoPublisher) context.getBean("demoPublisher");
         publisher.publish();
     }
 }

@@ -11,7 +11,7 @@ public class HelloServiceProperties {
 
     private static final String MSG = "world";
 
-    private String msg = MSG ;
+    private String msg = MSG;
 
     public String getMsg() {
         return msg;

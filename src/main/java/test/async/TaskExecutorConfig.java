@@ -16,7 +16,7 @@ import java.util.concurrent.Executor;
 @Configuration
 @ComponentScan("test.async")
 @EnableAsync
-public class TaskExecutorConfig implements AsyncConfigurer{
+public class TaskExecutorConfig implements AsyncConfigurer {
 
     @Override
     public Executor getAsyncExecutor() {

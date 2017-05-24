@@ -5,10 +5,10 @@ package com.springboot.helloWorld;
  */
 public class HelloService {
 
-    private String msg ;
+    private String msg;
 
-    public String sayHello(){
-        return "Hello " + msg ;
+    public String sayHello() {
+        return "Hello " + msg;
     }
 
     public String getMsg() {

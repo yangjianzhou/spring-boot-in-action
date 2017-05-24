@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @Autowired
-    private HelloService helloService ;
+    private HelloService helloService;
 
     @RequestMapping("/")
-    public String index(){
+    public String index() {
         return helloService.sayHello();
     }
 

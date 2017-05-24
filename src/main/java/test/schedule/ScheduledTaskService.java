@@ -20,12 +20,12 @@ public class ScheduledTaskService {
     private static final SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
 
     @Scheduled(fixedRate = 5000)
-    public void fixRateExecute(){
+    public void fixRateExecute() {
         System.out.println("every 5s execute once ," + sdf.format(new Date()));
     }
 
     @Scheduled(cron = " 0 56 21 ? * *")
-    public void fixTimeExecute(){
+    public void fixTimeExecute() {
         System.out.println("execute at specify time ," + sdf.format(new Date()));
     }
 }

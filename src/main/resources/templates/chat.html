@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html xmlns:th="http://www.thymeleaf.org">
-<meta charset="UTF-8" />
+<meta charset="UTF-8"/>
 <head>
     <title>Home</title>
     <script th:src="@{sockjs.min.js}"></script>
@@ -41,6 +41,7 @@
         stomp.send("/chat", {}, text);//3
     }
     $('#stop').click(function() {sock.close()});
+
 </script>
 
 <div id="output"></div>

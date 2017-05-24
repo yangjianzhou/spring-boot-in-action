@@ -12,13 +12,13 @@ public class ConditionConfig {
 
     @Bean
     @Conditional(WindowsCondition.class)
-    public ListService windowsListService(){
+    public ListService windowsListService() {
         return new WindowsListService();
     }
 
     @Bean
     @Conditional(LinuxCondition.class)
-    public ListService linuxListService(){
+    public ListService linuxListService() {
         return new LinuxListService();
     }
 }

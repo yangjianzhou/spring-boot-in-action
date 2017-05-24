@@ -14,8 +14,8 @@ public class DemoPublisher {
     @Autowired
     private ApplicationContext applicationContext;
 
-    public void publish(){
-        applicationContext.publishEvent(new DemoEvent(this ,"send msg"));
+    public void publish() {
+        applicationContext.publishEvent(new DemoEvent(this, "send msg"));
     }
 
 }

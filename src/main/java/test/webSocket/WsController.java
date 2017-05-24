@@ -13,7 +13,7 @@ public class WsController {
 
     @MessageMapping("/welcome")
     @SendTo("/topic/getResponse")
-    public Response say(Message msg) throws Exception{
+    public Response say(Message msg) throws Exception {
         Thread.sleep(1000);
         return new Response("welcome , " + msg.getName());
     }

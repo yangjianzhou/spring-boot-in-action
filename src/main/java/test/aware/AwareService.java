@@ -30,12 +30,12 @@ public class AwareService implements BeanNameAware, ResourceLoaderAware {
         this.loader = resourceLoader;
     }
 
-    public void printResult(){
+    public void printResult() {
         System.out.println("Bean name is : " + beanName);
         Resource resource = loader.getResource("/test/aware/test.txt");
-        try{
+        try {
             System.out.println(" content of file loaded by resourceLoader is : " + IOUtils.toString(resource.getInputStream()));
-        }catch (Exception exp){
+        } catch (Exception exp) {
 
         }
     }
